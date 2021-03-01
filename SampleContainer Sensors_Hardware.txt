@@ -1,0 +1,6 @@
+pH Sensor
+Disolved Oxygen Sensor
+Conductivity Sensor 
+Triad Spectrometer
+TDS Sensor
+Temperature Sensor

@@ -1,0 +1,62 @@
+DIY Home Algae Lab
+
+Chorella Vulgaris Starter Culture 50ml $100
+https://www.ebay.com.au/i/153640168816?chn=ps&norover=1&mkevt=1&mkrid=705-139619-5960-0&mkcid=2&itemid=153640168816&targetid=919947032846&device=c&mktype=pla&googleloc=1000286&campaignid=10101785216&mkgroupid=102311924620&rlsatarget=pla-919947032846&abcId=9300368&merchantid=7364522&gclid=Cj0KCQiA5bz-BRD-ARIsABjT4njI09Sbv3l3juNJZy2XmzKI8HThTaYl59izJBTgv0RKLorURafLrfMaAi_qEALw_wcB&var=453661927271
+
+Relay $14.56 DONE
+https://www.amazon.com.au/Channel-Relay-Module-Arduino-Raspberry/dp/B082S47JXM?th=1
+
+Air Compressor 250 PSI 10L/min $20 DONE
+https://www.autobarn.com.au/dr-air-air-compressor-12v-250-psi-w-gauge-ac011?gclid=CjwKCAiAwrf-BRA9EiwAUWwKXpbu_NWxoTgn_MRsBbtCDuLgfTgzlWEwU41kG4R4NR4Ssca4N5caxBoCycwQAvD_BwE
+
+Liquid Pump x2 $19.33 DONE
+https://www.amazon.com.au/Peristaltic-Connector-Arduino-Aquarium-Analytic/dp/B01IUVHB8E
+
+Air Pump (Bubbler), 6V or 12V $14.98 DONE
+https://www.amazon.com/Gikfun-Aquarium-Diaphragm-Arduino-EK1912/dp/B07DW4WRV8
+
+Tube Stone $3.19 DONE
+https://www.amazon.com.au/Pisces-Aquatics-Stone-Cylinder-Inch/dp/B07P45NDVQ/ref=asc_df_B07P45NDVQ/?tag=googleshopdsk-22&linkCode=df0&hvadid=341793530768&hvpos=&hvnetw=g&hvrand=8275242366691562453&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1000286&hvtargid=pla-922214985809&psc=1
+
+Sensors
+CO2 Sensor $58 DONE
+https://www.dfrobot.com/product-1549.html
+
+DO Analog Disolved Oxygen Sensor $135 OUT OF STOCK GET FROM MARC
+https://www.dfrobot.com/product-1628.html
+
+IO Arduino Expansion Shield $8.90 DONE
+https://www.dfrobot.com/product-1009.html
+
+pH Analog pH Sensor V2 $64.90 DONE
+https://www.dfrobot.com/product-2069.html
+
+Conductivity Analog Electrical Conductivity Sensor $49.90 DONE
+https://www.dfrobot.com/product-1123.html
+
+TDS Sensor $8.90 DONE
+https://www.dfrobot.com/product-1662.html
+
+Triad Spectrometer, measures UV & IR $115.95 DONE
+https://www.robotgear.com.au/Product.aspx/Details/6355-SparkFun-Triad-Spectroscopy-Sensor-AS7265x-Qwiic
+
+Liquid Level Sensor $15.33 DONE
+https://au.element14.com/dfrobot/sen0204/non-contact-water-liquid-level/dp/2946127?gclid=Cj0KCQiA5bz-BRD-ARIsABjT4njmHGXBaY0GRn2L-3NLMM0WFt3V7Ph5sckE5uQbeJ9VC4b24RPm2QUaAjfLEALw_wcB&mckv=s_dc|pcrid|432287894085|pkw||pmt||slid||product|2946127|pgrid|102205443084|ptaid|aud-471864486199:pla-902298347417|&CMP=KNC-GAU-GEN-SHOPPING-EMBEDDED-COMPUTERS
+	
+Temperature Sensor $2.20 DONE
+https://au.element14.com/analog-devices/tmp36gt9z/ic-sensor-temp-to-92-3/dp/1438760?st=tmp36
+
+Pressure Sensor $21.99 DONE
+https://www.ebay.com.au/i/333783879951?chn=ps&norover=1&mkevt=1&mkrid=705-139619-5960-0&mkcid=2&itemid=333783879951&targetid=920064925573&device=c&mktype=pla&googleloc=9071865&poi=&campaignid=10101785213&mkgroupid=102311925540&rlsatarget=pla-920064925573&abcId=9300368&merchantid=7364522&gclid=Cj0KCQiA8dH-BRD_ARIsAC24umbjAp9gC9ZrxZrfVwZD0Fz-_SaKf9LJ9G6GXidIq_RCwHl_70x7t-8aAhtDEALw_wcB
+
+Missing/NA sensors
+Ammonia (NH4) Sensor: Ammonia is a source of nutrients for algae growth, an increase in pH with higher concentrations of ammonia could have a decreased
+algae growth rate.
+
+Nitrate (N03) Sensor: Nitrate is another source of nutrients for algae growth.
+
+Spectrometer Sensors: Has been Substituted, raman sprectro cannot be found
+
+Fluorometer
+
+Microscope

@@ -1,0 +1,5 @@
+Air Compressor - Done requires Integration
+CO2 Sensor - TBC
+Pressure Sensor - Done requires Integration and calibration
+LED Lights - Done requires Integration
+Air Pump - Done requires Integration and proper wiring due to disconnections with wires

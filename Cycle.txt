@@ -1,0 +1,7 @@
+Natural Cycle
+	- Pumps air into the reactor
+	- Checks the pressure to 30 psi
+
+Interval Cycle (1Hr)
+	- Pumps sample into the sample container till it reaches a level
+	- sends the data into mySQL database
