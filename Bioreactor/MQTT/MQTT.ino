@@ -12,10 +12,16 @@ const char* password = "dearytweetabdQK";
 
 const char* mqtt_server = "192.168.0.24";
 
-int lastMsg = 0;
 int value = 0;
 String val;
-char *topics[] = {"mega/temperature", "test"};
+char *sampleTopics[] = {"sampleSensor/temperature", "sampleSensor/pH", "sampleSensor/conductivity", "sampleSensor/DO", "sampleSensor/litre","sampleSensor/channelA",
+                        "sampleSensor/channelB", "sampleSensor/channelC", "sampleSensor/channelD", "sampleSensor/channelE", "sampleSensor/channelF",
+                        "sampleSensor/channelG", "sampleSensor/channelH", "sampleSensor/channelR", "sampleSensor/channelI", "sampleSensor/channelS",
+                        "sampleSensor/channelJ", "sampleSensor/channelT", "sampleSensor/channelU", "sampleSensor/channelV", "sampleSensor/channelW",
+                        "sampleSensor/channelK", "sampleSensor/channelL"};
+
+char *reactorTopics[] = {"reactorSensor/CO2", "reactorSensor/pressure", "reactorSensor/R", "reactorSensor/G", "reactorSensor/B"};                     
+
 
 void setup() {
   Serial.begin(115200);
@@ -63,10 +69,7 @@ void reconnect() {
   while (!client.connected()) {
     Serial.print("Attempting MQTT connection...");
     // Attempt to connect
-    if (client.connect("ArduinoClient")) {
-      Serial.println("connected");
-      // Subscribe
-      client.subscribe("test");
+    if (client.connect("ESP32")) {
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
@@ -81,24 +84,88 @@ void loop() {
     reconnect();
   }
   client.loop();
+
+  sendSampleData();
+  sendReactorData();
+  /*
+  for (int j = 0; j < sizeof(reactorTopics); j++){
+    val = j;
+    int str_len = val.length() + 1;
+    char char_array[str_len];
+    val.toCharArray(char_array, str_len);
+    client.publish(reactorTopics[j], char_array);
+    delay(250);
+  }
+  for (int i = 0; i < sizeof(sampleTopics); i++){
+    val = i;
+    int str_len = val.length() + 1;
+    char char_array[str_len];
+    val.toCharArray(char_array, str_len);
+    client.publish(sampleTopics[i], char_array);
+    delay(250);
+  }
+  client.endPublish();
+
   
+  
+  /*
   if (mySerial.available()) {
-    for(int i = 0; i<2; i++){
+    for(int i = 0; i < sizeof(sampleTopics); i++){
       val = Serial.readString();
       int str_len = val.length() + 1;
       char char_array[str_len];
       Serial.println(val);
       val.toCharArray(char_array, str_len);
-      //client.publish(topics[i], char_array);
+      //client.publish(sampleTopics[i], char_array);
       //Serial.write(Serial.read());
     }
     
   }
-  
+  */
 }
 
-void readSensorData(){
-  if (Serial.available()){
-    
+void sendSampleData(){
+  int lastMsg = 0;
+  unsigned long reactorTimer = millis();
+  if (reactorTimer - lastMsg > 10000) {
+    lastMsg = reactorTimer;
+    client.publish(reactorTopics[0], "0");
+    client.publish(reactorTopics[1], "1");
+    client.publish(reactorTopics[2], "2");
+    client.publish(reactorTopics[3], "3");
+    client.publish(reactorTopics[4], "4");
+    delay(200);
+  }
+}
+
+void sendReactorData(){
+  int lastMsg = 0;
+  unsigned long sampleTimer = millis();
+  if (sampleTimer - lastMsg > 10000) {
+    lastMsg = sampleTimer;
+    client.publish(sampleTopics[0], "0");
+    client.publish(sampleTopics[1], "1");
+    client.publish(sampleTopics[2], "2");
+    client.publish(sampleTopics[3], "3");
+    client.publish(sampleTopics[4], "4");
+    client.publish(sampleTopics[5], "5");
+    client.publish(sampleTopics[6], "6");
+    client.publish(sampleTopics[7], "7");
+    client.publish(sampleTopics[8], "8");
+    client.publish(sampleTopics[9], "9");
+    client.publish(sampleTopics[10], "10");
+    client.publish(sampleTopics[11], "11");
+    client.publish(sampleTopics[12], "12");
+    client.publish(sampleTopics[13], "13");
+    client.publish(sampleTopics[14], "14");
+    client.publish(sampleTopics[15], "15");
+    client.publish(sampleTopics[16], "16");
+    client.publish(sampleTopics[17], "17");
+    client.publish(sampleTopics[18], "18");
+    client.publish(sampleTopics[19], "19");
+    client.publish(sampleTopics[20], "20");
+    client.publish(sampleTopics[21], "21");
+    client.publish(sampleTopics[22], "22");
+    delay(200);
   }
 }

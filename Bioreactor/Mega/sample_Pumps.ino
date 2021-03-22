@@ -1,7 +1,7 @@
-int pumpInENA = 
-int pumpIn1 = 
-int pumpIn2 = 
+int pumpInENA = 4;
+int pumpIn1 = 22;
+int pumpIn2 = 23;
 
-int pumpInEnB = 
-int pumpIn3 = 
-int pumpIn4 = 
+int pumpInEnB = 5;
+int pumpIn3 = 24;
+int pumpIn4 = 25;

@@ -37,11 +37,6 @@ int lastPhButtonState = LOW;
 unsigned long lastPhDebounceTime = 0;
 unsigned long phDebounceDelay = 50;
 
-//Calibration Button
-int calibrateButtonState;
-int lastCalibrateButtonState = LOW;
-unsigned long lastDebounceTime = 0;
-unsigned long debounceDelay = 50;
 
 // Oxygen
 const uint16_t DO_Table[41] = {
